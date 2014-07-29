@@ -47,6 +47,14 @@ module.exports = function(request, response) {
 			response.end();
 		});
 	}
+	else if(extension === "jpg" || extension === "jpeg" || extension === "png") {
+		response.writeHead(200, {'Content-type': 'image'});
+		var url = "./static/img"+request.url
+		fs.readFile(url, function (errors, contents) {
+			response.write(contents);
+			response.end();
+		});
+	}
 // If extension did not match
 	else {
 		response.writeHead(404, {'Content-type': 'text/html'});

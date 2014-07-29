@@ -1,7 +1,10 @@
 SIMPLE LIGHTWEIGHT STATIC CONTENT MODULE FOR NODEJS
 
 The link URI's must start with "/" and should end with an extension ".html", ".css", or ".js"
+You can also add images ending in ".jpg", ".jpeg", and ".png"
+
 Keep all static files in the static folder.
 Static HTML files go in "./static/views"
 Static CSS files go in "./static/styles"
 Static JS files go in "./static/js"
+Static IMG files go in "./static/img"
